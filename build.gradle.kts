@@ -13,11 +13,14 @@ repositories {
         url = uri("https://repo.flammenfuchs.de/public")
         name = "flammenfuchs-repo"
     }
+    maven("https://repo.panda-lang.org/releases")
 }
 
 dependencies {
     testImplementation(kotlin("test"))
     compileOnly("io.papermc.paper:paper-api:1.21.5-R0.1-SNAPSHOT")
+    implementation("de.flammenfuchs:injections:3.0.0")
+    implementation("dev.rollczi:litecommands-bukkit:3.9.7")
 }
 
 publishing {
