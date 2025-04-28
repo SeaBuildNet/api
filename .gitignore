@@ -1,0 +1,52 @@
+# Gradle
+.gradle/
+build/
+
+# Kotlin specific
+*.class
+*.jar
+*.war
+*.ear
+
+# IntelliJ/Fleet/JetBrains IDEs
+.idea/
+fleet.toml
+*.iml
+*.ipr
+*.iws
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary Files
+out/
+tmp/
+*.tmp
+
+# Generated files
+generated/
+
+# Local Environment
+.env
+local.properties
+
+# Kotlin compile output
+bin/
+
+# Ktor specific (if using Ktor server)
+uploads/
+
+# Coverage reports
+coverage/
+jacoco.exec
+
+# Node (if mixed frontend-backend project)
+node_modules/
+
+# Other
+*.swp
+*.swo
