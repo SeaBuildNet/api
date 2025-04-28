@@ -5,6 +5,7 @@ build/
 # Kotlin specific
 *.class
 *.jar
+!gradle/wrapper/*.jar
 *.war
 *.ear
 
