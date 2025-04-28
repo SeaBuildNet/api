@@ -26,7 +26,7 @@ publishing {
             from(components["java"])
 
             groupId = group.toString()
-            artifactId = name
+            artifactId = project.findProperty("artifactId") as String? ?: project.name
             version = version.toString()
         }
     }
