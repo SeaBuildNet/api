@@ -9,4 +9,6 @@ object Constants {
     val COLOR_BACKGROUND = "#555555"
 
     val CHAT_PREFIX = "<gradient:#55FFFF:#5555FF><bold>SEABUILD</bold></gradient> <back>» <def>"
+
+    val PERMISSION_PREFIX = "seabuild."
 }
