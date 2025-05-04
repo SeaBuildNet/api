@@ -6,9 +6,9 @@ interface User {
 
     val uuid: UUID
 
-    val name: String
+    var name: String
 
-    val knownNames: List<String>
+    val knownNames: MutableList<String>
 
-    val properties: Map<String, Any>
+    val properties: MutableMap<String, Any>
 }

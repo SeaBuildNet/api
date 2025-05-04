@@ -4,6 +4,6 @@ package net.seabuild.api.annon
 @Target(AnnotationTarget.FUNCTION)
 annotation class Schedule(
     val delay: Long,
-    val repeat: Long = -1,
-    val period: Long = -1L
+    val period: Long = -1L,
+    val async: Boolean = false
 )

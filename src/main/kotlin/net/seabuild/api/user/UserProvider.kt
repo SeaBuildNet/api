@@ -2,24 +2,28 @@ package net.seabuild.api.user
 
 import java.util.UUID
 
-interface UserProvider<U: User> {
+interface UserProvider {
     fun exists(uuid: UUID): Boolean
 
-    fun getOrCreate(uuid: UUID): U
+    fun get(uuid: UUID): User?
 
-    fun persist(u: U)
+    fun getOrCreate(uuid: UUID, name: String): User
 
-    fun delete(u: U)
+    fun persist(user: User)
+
+    fun delete(user: User)
 
     fun delete(uuid: UUID)
 
     suspend fun existsSuspended(uuid: UUID): Boolean
 
-    suspend fun getOrCreateSuspended(uuid: UUID): U
+    suspend fun getSuspended(uuid: UUID): User?
 
-    suspend fun persistSuspended(u: U)
+    suspend fun getOrCreateSuspended(uuid: UUID, name: String): User
 
-    suspend fun deleteSuspended(u: U)
+    suspend fun persistSuspended(user: User)
+
+    suspend fun deleteSuspended(user: User)
 
     suspend fun deleteSuspended(uuid: UUID)
 }

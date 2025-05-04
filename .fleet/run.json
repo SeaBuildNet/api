@@ -1,0 +1,9 @@
+{
+    "configurations": [
+        {
+            "type": "gradle",
+            "name": "Publish to Local Maven Repo",
+            "tasks": ["publishToMavenLocal"]
+        }
+    ]
+}

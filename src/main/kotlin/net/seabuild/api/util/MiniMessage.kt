@@ -24,3 +24,7 @@ val miniMessage =
 fun miniMessage(message: String): Component {
     return miniMessage.deserialize(message)
 }
+
+fun prefixedMiniMessage(message: String): Component {
+    return miniMessage(Constants.CHAT_PREFIX + message)
+}
